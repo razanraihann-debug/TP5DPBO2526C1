@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="PeopleMenu">
+<grid id="a0013" binding="mainPanel" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="8">
+<margin top="15" left="20" bottom="15" right="20" />
+<constraints>
+<xy x="20" y="20" width="720" height="580" />
+</constraints>
+<properties />
+<border type="none" />
+<children>
+<component id="a0001" class="javax.swing.JLabel" binding="titleLabel">
+<constraints>
+<grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<font size="22" style="1" />
+<horizontalAlignment value="0" />
+<text value="Data Kru Stasiun Antariksa" />
+</properties>
+</component>
+<component id="a0002" class="javax.swing.JLabel" binding="idLabel">
+<constraints>
+<grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<text value="ID" />
+</properties>
+</component>
+<component id="a0003" class="javax.swing.JLabel" binding="namaLabel">
+<constraints>
+<grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<text value="Nama" />
+</properties>
+</component>
+<component id="a0004" class="javax.swing.JLabel" binding="tahunLabel">
+<constraints>
+<grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<text value="Tahun Lahir" />
+</properties>
+</component>
+<component id="a0005" class="javax.swing.JLabel" binding="kategoriLabel">
+<constraints>
+<grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<text value="Kategori" />
+</properties>
+</component>
+<component id="a0006" class="javax.swing.JLabel" binding="energiLabel">
+<constraints>
+<grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<text value="Level Energi" />
+</properties>
+</component>
+<component id="a0007" class="javax.swing.JTextField" binding="idField">
+<constraints>
+<grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+<preferred-size width="150" height="-1" />
+</grid>
+</constraints>
+<properties>
+
+</properties>
+</component>
+<component id="a0008" class="javax.swing.JTextField" binding="namaField">
+<constraints>
+<grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+<preferred-size width="150" height="-1" />
+</grid>
+</constraints>
+<properties>
+
+</properties>
+</component>
+<component id="a0009" class="javax.swing.JTextField" binding="tahunField">
+<constraints>
+<grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+<preferred-size width="150" height="-1" />
+</grid>
+</constraints>
+<properties>
+
+</properties>
+</component>
+<component id="a000a" class="javax.swing.JComboBox" binding="kategoriComboBox">
+<constraints>
+<grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<model>
+<item value="???" />
+<item value="Komandan Misi" />
+<item value="Pilot Roket" />
+<item value="Insinyur Reaktor" />
+<item value="Astrobiolog" />
+<item value="Dokter Antariksa" />
+<item value="Teknisi Hidroponik" />
+</model>
+</properties>
+</component>
+<component id="a000b" class="javax.swing.JSlider" binding="energiSlider">
+<constraints>
+<grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<majorTickSpacing value="25" />
+<paintLabels value="true" />
+<paintTicks value="true" />
+<value value="50" />
+</properties>
+</component>
+<component id="a000c" class="javax.swing.JLabel" binding="energiValueLabel">
+<constraints>
+<grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<font style="1" />
+<text value="50%" />
+</properties>
+</component>
+<component id="a000d" class="javax.swing.JButton" binding="addUpdateButton">
+<constraints>
+<grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<text value="Add" />
+</properties>
+</component>
+<component id="a000f" class="javax.swing.JButton" binding="deleteButton">
+<constraints>
+<grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<text value="Delete" />
+</properties>
+</component>
+<component id="a0010" class="javax.swing.JButton" binding="cancelButton">
+<constraints>
+<grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+</constraints>
+<properties>
+<text value="Cancel" />
+</properties>
+</component>
+<scrollpane id="a0012" binding="scrollPane">
+<constraints>
+<grid row="6" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false" />
+</constraints>
+<properties />
+<border type="none" />
+<children>
+<component id="a0011" class="javax.swing.JTable" binding="personTable">
+<constraints />
+<properties />
+</component>
+</children>
+</scrollpane>
+</children>
+</grid>
+</form>
