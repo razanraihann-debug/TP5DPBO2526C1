@@ -2,9 +2,7 @@
 Saya Razan Raihan Malik dengan NIM 2508838 mengerjakan Tugas Praktikum 5 pada Mata Kuliah Desain dan Pemrograman Berorientasi Objek (DPBO) untuk keberkahan-Nya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
 
 # Desain / Fungsi Program
-
 Tema **People** divisualisasikan sebagai kru stasiun luar angkasa. Setiap `Person` memiliki atribut:
-
 | Atribut | Komponen Form | Keterangan |
 |---|---|---|
 | ID | `JTextField` | Kode unik kru (mis. `KRU001`), tidak bisa diubah saat edit |
@@ -12,9 +10,7 @@ Tema **People** divisualisasikan sebagai kru stasiun luar angkasa. Setiap `Perso
 | Tahun Lahir | `JTextField` | Angka 1900 – tahun sekarang |
 | Kategori | `JComboBox` | Jabatan: Komandan Misi, Pilot Roket, Insinyur Reaktor, Astrobiolog, Dokter Antariksa, Teknisi Hidroponik |
 | **Level Energi** *(atribut baru)* | **`JSlider`** | Nilai 0–100%, nilainya tampil real-time di samping slider (**bonus +20**, bukan `JTextField`) |
-
 Struktur kode:
-
 - `Person.java` – class model (atribut, constructor, getter/setter).
 - `Database.java` – koneksi JDBC ke MySQL + query CRUD (`PreparedStatement`).
 - `PeopleMenu.java` – form utama (GUI + logika CRUD). Data dibaca langsung dari database; tidak ada lagi `ArrayList`.
@@ -22,19 +18,11 @@ Struktur kode:
 - `PeopleMenu.form` – desain form (IntelliJ IDEA GUI Designer), ter-bind ke class `PeopleMenu`.
 
 # Alur Program
-
 1. Program dijalankan → `refreshTable()` mengambil semua data dari tabel `tb_kru` → ditampilkan di `JTable`.
 2. **Create** – isi form, klik **Add** → `INSERT`. Dialog error muncul jika **ada kolom kosong** atau **ID sudah ada** di database.
 3. **Read** – seluruh data tampil di tabel. Klik satu baris untuk memuat nilainya ke form lewat model tabel (mode edit: Add nonaktif, Update & Delete aktif, ID dikunci).
 4. **Update** – ubah isi form, klik **Update** → `UPDATE` (dialog error jika ada kolom kosong).
 5. **Delete** – klik **Delete** → dialog konfirmasi (Yes/No) → `DELETE` jika memilih *Yes*.
 6. **Cancel** – mengosongkan form & membatalkan mode edit.
-
-# Cara Menjalankan
-
-1. Nyalakan MySQL (XAMPP/Laragon/MySQL Server), lalu import `Database/db_antariksa.sql`.
-2. Sesuaikan `URL`, `USER`, `PASS` di `PeopleData/Database.java` jika perlu (default: `root`, tanpa password, port 3306).
-3. **IntelliJ IDEA:** tambahkan driver lewat *File → Project Structure → Libraries → + → From Maven* → `com.mysql:mysql-connector-j:8.4.0`.
-4. Jalankan `main()` pada `PeopleMenu`.
 
 # Dokumentasi
