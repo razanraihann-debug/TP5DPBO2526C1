@@ -1,5 +1,6 @@
 # Janji
 Saya Razan Raihan Malik dengan NIM 2508838 mengerjakan Tugas Praktikum 5 pada Mata Kuliah Desain dan Pemrograman Berorientasi Objek (DPBO) untuk keberkahan-Nya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
+# Struktur File
 
 # Desain / Fungsi Program
 Tema **People** divisualisasikan sebagai kru stasiun luar angkasa. Setiap `Person` memiliki atribut:
